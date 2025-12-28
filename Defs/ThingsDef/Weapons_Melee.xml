@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>GD_PickaxeSmall</defName>
+		<label>Mining Pick</label>
+		<description>A small pickaxe used by soldiers, civilians, and bandits alike. Familiar to any person that exists on any rimworld. </description>
+		<possessionCount>1</possessionCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<defaultStuff>Steel</defaultStuff>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.0</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.25</MiningSpeed>
+			<MiningYield>0.10</MiningYield>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>pick</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<displayPriority>409</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>GD_PickaxeLarge</defName>
+		<label>Heavy Pickaxe</label>
+		<description>A heavier pickaxe carried by Rooks. It is a stronger tool meant to easily chew through rocks, debris, and sometimes people. It requires more strength to use properly.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<defaultStuff>Steel</defaultStuff>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>4.0</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.50</MiningSpeed>
+			<MiningYield>0.25</MiningYield>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.75</cooldownTime>
+			</li>
+			<li>
+				<label>pick</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.25</cooldownTime>
+				<armorPenetration>0.40</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>409</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

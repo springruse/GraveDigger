@@ -1,0 +1,28 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.csproj.user
+.vscode/
+
+# RimWorld - Don't upload compiled DLLs (people build their own)
+Assemblies/*.dll
+Assemblies/*.pdb
+
+# Backup files
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
