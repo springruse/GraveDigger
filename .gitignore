@@ -7,7 +7,7 @@ obj/
 *.csproj.user
 .vscode/
 
-# RimWorld - Don't upload compiled DLLs (people build their own)
+# RimWorld 
 Assemblies/*.dll
 Assemblies/*.pdb
 
