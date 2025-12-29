@@ -22,7 +22,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 		</statBases>
 		<equippedStatOffsets>
-			<MiningSpeed>0.25</MiningSpeed>
+			<MiningSpeed>0.30</MiningSpeed>
 			<MiningYield>0.10</MiningYield>
 		</equippedStatOffsets>
 		<equippedAngleOffset>-65</equippedAngleOffset>
