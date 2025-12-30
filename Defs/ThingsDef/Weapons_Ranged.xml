@@ -339,5 +339,93 @@
       <speed>55</speed>
     </projectile>
   </ThingDef>
-  
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_WhisperRifle</defName>
+    <label>whisper silenced rifle</label>
+    <description>A unique silenced rifle, designed for stealthier operations while in confined areas. A maxim silencer was put on this rifle to reduce the noise that this weapon makes.\n\nA rather generic rifle, moreso meant for hunting animals. It'll still get the job done on whatever you throw at it.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <HuntingStealth>0.4</HuntingStealth>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_WhisperRifle</defaultProjectile>
+        <warmupTime>1.75</warmupTime>
+        <range>39</range>
+        <soundCast>WhisperFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_WhisperRifle</defName>
+    <label>whisper rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.5</stoppingPower>
+      <damageAmountBase>22</damageAmountBase>
+      <armorPenetrationBase>0.29</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
 </Defs>
