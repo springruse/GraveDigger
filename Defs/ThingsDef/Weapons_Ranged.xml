@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_GraceRevolver</defName>
     <label>grace service revolver</label>
@@ -69,7 +70,6 @@
       <displayPriority>401</displayPriority>
     </recipeMaker>
   </ThingDef>
-
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_GraceRevolver</defName>
     <label>grace revolver bullet</label>
@@ -170,6 +170,7 @@
       <speed>70</speed>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_UnionPistol</defName>
     <label>union military pistol</label>
@@ -254,6 +255,7 @@
       <speed>55</speed>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_EquineShotgun</defName>
     <label>equine riding shotgun</label>
@@ -337,4 +339,5 @@
       <speed>55</speed>
     </projectile>
   </ThingDef>
+  
 </Defs>
