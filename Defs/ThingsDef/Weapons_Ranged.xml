@@ -254,4 +254,87 @@
       <speed>55</speed>
     </projectile>
   </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_EquineShotgun</defName>
+    <label>equine riding shotgun</label>
+    <description>A shotgun designated for horse riders, sporting long two barrels and a single trigger. It seems to have found it's place in the caves, decimating enemies with unparalleled efficiency with it's accurate range and damage. It seems to have been modified to fire both barrels simultaneously.\n\nMost famously used to annhilate a Royal Nation Guardhouse, who had previously assassinated a Grand Inquisitor in the the Golden Empire's sacred grounds.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EquineShotgun</defaultProjectile>
+        <warmupTime>1.75</warmupTime>
+        <range>20</range>
+        <soundCast>EquineFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EquineShotgun</defName>
+    <label>equine shotgun pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3</stoppingPower>
+      <damageAmountBase>19</damageAmountBase>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
 </Defs>
