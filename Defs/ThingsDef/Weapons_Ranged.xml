@@ -155,7 +155,6 @@
       <displayPriority>416</displayPriority>
     </recipeMaker>
   </ThingDef>
-
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_PrinceRifle</defName>
     <label>prince rifle bullet</label>
@@ -174,7 +173,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_UnionPistol</defName>
     <label>union military pistol</label>
-    <description>A small long ranged pistol, having profound range, accuracy, and damage. Chambered in a smaller caliber, 9mm lead, it stands as a reliable sidearm for all ranges.\n\nA remarkably well-made gun for its time, being made between Solace Coalition and the Royal Nation due to the need for a higher capacity, longer ranged pistol that could rival the Grace Revolver. </description>
+    <description>A small long ranged pistol, having profound range, accuracy, and damage. Chambered in a smaller caliber, 9mm lead, it stands as a reliable sidearm for all ranges.\n\nA remarkably well-made gun for its time, being made between Solace Coalition and the Royal Nation due to the need for a higher capacity, longer ranged pistol that could rival the Grace Revolver.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
