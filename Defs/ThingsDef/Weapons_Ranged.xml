@@ -317,7 +317,7 @@
     <recipeMaker>
       <researchPrerequisite>Smithing</researchPrerequisite>
       <skillRequirements>
-        <Crafting>2</Crafting>
+        <Crafting>5</Crafting>
       </skillRequirements>
       <displayPriority>416</displayPriority>
     </recipeMaker>
