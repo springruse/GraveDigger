@@ -534,4 +534,94 @@
     </projectile>
   </ThingDef>
 
+  <!-- ============================================ -->
+  <!-- JUDGEMENT BREECH RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_JudgementBreechRifle</defName>
+    <label>judgement breech rifle</label>
+    <description>A breech loading rifle with extreme damage capabilities. It's sheer power and good precision define its place to judge those who are facing the wrong end of it. Despite it's power, it's handling is rather cumbersome due to the added bayonet and overall weight of the weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.89</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_JudgementRifle</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>41</range>
+        <soundCast>JudgementFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>bayonet</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_JudgementRifle</defName>
+    <label>judgement breech bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3.2</stoppingPower>
+      <damageAmountBase>29</damageAmountBase>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
 </Defs>
