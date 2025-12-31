@@ -6,6 +6,8 @@ A RimWorld mod inspired by the Roblox game GraveDigger.
 - 'Grace' Revolver Pistol
 - 'Union' Military Revolver
 - 'Prince' Long Rifle
+- 'Equine' Riding Shotgun
+- 'Hellion' Automatic Shotgun
 - (More coming soon!)
 
 ## Installation
