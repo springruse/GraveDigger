@@ -362,7 +362,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_HellionShotgun</defName>
     <label>hellion automatic shotgun</label>
-    <description>A complex yet deadly automatic shotgun, designed for extreme rapid firepower and volume of fire. Boasts high accuracy and rate of fire to offset its lower damage. Just keep pressing the trigger as fast as you can.\n\nMeant to rival the Golden Empire's Equine, it was used in a Royal Nation propaganda film,'The Hellion', to depict its true capabilities compared to the cultist's inferior shotgun. Thus, it earned its rightful name as the "Hellion" automatic shotgun, despite never having split blood for its own name.</description>
+    <description>A complex yet deadly automatic shotgun, designed for extreme rapid firepower and volume of fire. Boasts high accuracy and rate of fire to offset its lower damage. Just keep pressing the trigger as fast as you can.\n\nMeant to rival the Golden Empire's Equine, it was used in a Royal Nation propaganda film, 'The Hellion', to depict its true capabilities compared to the cultist's inferior shotgun. Thus, it earned its rightful name as the "Hellion" automatic shotgun, despite never having split blood for its own name.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <!-- ============================================ -->
+  <!-- MINING PICK -->
+  <!-- ============================================ -->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>GD_PickaxeSmall</defName>
 		<label>Mining Pick</label>
@@ -62,6 +65,9 @@
 		</recipeMaker>
 	</ThingDef>
 
+  <!-- ============================================ -->
+  <!-- HEAVY PICKAXE -->
+  <!-- ============================================ -->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>GD_PickaxeLarge</defName>
 		<label>Heavy Pickaxe</label>
@@ -122,4 +128,5 @@
 			<displayPriority>409</displayPriority>
 		</recipeMaker>
 	</ThingDef>
+
 </Defs>
