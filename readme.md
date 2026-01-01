@@ -10,10 +10,11 @@ A RimWorld mod inspired by the Roblox game GraveDigger.
 - 'Whisper' Silenced Rifle
 - 'Crestfall' Lever Action Rifle
 - 'Adjudicator' Repeating Rifle
-- 'Equine' Riding Shotgun
-- 'Hellion' Automatic Shotgun
+- 'Jesse' Combat Rifle
 - 'Judgement' Breech Rifle
 - 'Volk' Precision Rifle
+- 'Equine' Riding Shotgun
+- 'Hellion' Automatic Shotgun
 - (More coming soon!)
 
 ## Installation
