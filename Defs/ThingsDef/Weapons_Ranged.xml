@@ -89,6 +89,185 @@
     </projectile>
   </ThingDef>
 
+  
+  <!-- ============================================ -->
+  <!-- UNION MILITARY PISTOL -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_UnionPistol</defName>
+    <label>union military pistol</label>
+    <description>A small long ranged pistol, having profound range, accuracy, and damage. Chambered in a smaller caliber, 9mm lead, it stands as a reliable sidearm for all ranges.\n\nA remarkably well-made gun for its time, being made between Solace Coalition and the Royal Nation due to the need for a higher capacity, longer ranged pistol that could rival the Grace Revolver.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_UnionPistol</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>29</range>
+        <soundCast>UnionFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_UnionPistol</defName>
+    <label>union pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>0.75</stoppingPower>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ============================================ -->
+  <!-- AUCLAIR LEVER PISTOL -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_AuclairLeverPistol</defName>
+    <label>auclair lever pistol</label>
+    <description>A lever-action that was cut down to an extreme degree, earning the common nickname "Mare's Leg". Despite its compact size, it still fires a full rifle caliber but has less accuracy, range, and damage than its full-sized counterpart.\n\nAt a Solace Coalition Outpost, this weapon was cut down by weaponsmiths for their everyday carry. A relatively large force of about a dozen bandits had taken hold of the outpost. Thinking the weaponsmiths were unarmed, they were soon met with a hail of gunfire that caused their downfall.\n\n While the Golden Empire and Royal Nation Peacekeepers were late to the call, they were greeted by a weaponsmith covered in someone else's blood. Two schematics were handed to them, as the man introduced himself as Jean Auclair.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Auclair</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>25</range>
+        <soundCast>AuclairFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Auclair</defName>
+    <label>auclair pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
   <!-- ============================================ -->
   <!-- PRINCE LONG RIFLE -->
   <!-- ============================================ -->
@@ -179,143 +358,54 @@
   </ThingDef>
 
   <!-- ============================================ -->
-  <!-- UNION MILITARY PISTOL -->
+  <!-- CRESTFALL LEVER RIFLE -->
   <!-- ============================================ -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>GD_UnionPistol</defName>
-    <label>union military pistol</label>
-    <description>A small long ranged pistol, having profound range, accuracy, and damage. Chambered in a smaller caliber, 9mm lead, it stands as a reliable sidearm for all ranges.\n\nA remarkably well-made gun for its time, being made between Solace Coalition and the Royal Nation due to the need for a higher capacity, longer ranged pistol that could rival the Grace Revolver.</description>
+    <defName>GD_CrestfallLeverRifle</defName>
+    <label>crestfall lever rifle</label>
+    <description>A lever-action rifle designed for rapid engagements in close quarters combat. It has good precision and damage, but lacks the proper range and stopping power to stop bigger threats.\n\n"Females are never allowed to be royalty - for if one becomes one, it would show that the Queen was right all along." A fellow monarch spoke toward the table.\n\nThe man in the middle let his tongue drift outward. "My daughter will be given a seat at this table, one way or another. No exceptions," he declared.\n\nA dozen kings within the room stared back at his remark, many filled with pity, shock, and scorn. He was soon brought before the people of Avvalia to stand trial for treason against his people.\n\nIt wasn't long before he began to plead for his own life in a beggar's rags, his royalty and loyalty stripped. He looked down the barrel of his own rifle pointed at his head. No one looked with sympathy or remorse as the Old Guard brought their judgement to fire.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <possessionCount>1</possessionCount>
     <techLevel>Industrial</techLevel>
     <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-      <WoodLog>10</WoodLog>
-    </costList>
-    <statBases>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>2.0</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.83</AccuracyMedium>
-      <AccuracyLong>0.82</AccuracyLong>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-    </statBases>
-    <weaponTags>
-      <li>SimpleGun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_UnionPistol</defaultProjectile>
-        <warmupTime>0.4</warmupTime>
-        <range>29</range>
-        <soundCast>UnionFire</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-    <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <displayPriority>401</displayPriority>
-    </recipeMaker>
-  </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_UnionPistol</defName>
-    <label>union pistol bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <stoppingPower>0.75</stoppingPower>
-      <damageAmountBase>12</damageAmountBase>
-      <armorPenetrationBase>0.18</armorPenetrationBase>
-      <speed>55</speed>
-    </projectile>
-  </ThingDef>
-
-  <!-- ============================================ -->
-  <!-- AUCLAIR LEVER PISTOL -->
-  <!-- ============================================ -->
-
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>GD_AuclairLeverPistol</defName>
-    <label>auclair lever pistol</label>
-    <description>A lever-action that was cut down to an extreme degree, earning the common nickname "Mare's Leg". Despite its compact size, it still fires a full rifle caliber but has less accuracy, range, and damage than its full-sized counterpart.\n\nAt a Solace Coalition Outpost, this weapon was cut down by weaponsmiths for their everyday carry. A relatively large force of about a dozen bandits had taken hold of the outpost. Thinking the weaponsmiths were unarmed, they were soon met with a hail of gunfire that caused their downfall.\n\n While the Golden Empire and Royal Nation Peacekeepers were late to the call, they were greeted by a weaponsmith covered in someone else's blood. Two schematics were handed to them, as the man introduced himself as Jean Auclair.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <possessionCount>1</possessionCount>
-    <techLevel>Industrial</techLevel>
-    <costList>
-      <Steel>80</Steel>
+      <Steel>60</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-      <WoodLog>10</WoodLog>
+      <WoodLog>20</WoodLog>
     </costList>
     <statBases>
-      <WorkToMake>9000</WorkToMake>
-      <Mass>2.5</Mass>
-      <AccuracyTouch>0.81</AccuracyTouch>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
       <AccuracyShort>0.83</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
     </weaponTags>
     <weaponClasses>
-      <li>RangedLight</li>
+        <li>ShortShots</li>
     </weaponClasses>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Auclair</defaultProjectile>
-        <warmupTime>0.8</warmupTime>
-        <range>25</range>
-        <soundCast>AuclairFire</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <defaultProjectile>Bullet_CrestfallLeverRifle</defaultProjectile>
+        <warmupTime>1.50</warmupTime>
+        <range>30</range>
+        <soundCast>CrestfallFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>grip</label>
+        <label>stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -337,22 +427,22 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <displayPriority>401</displayPriority>
+      <displayPriority>416</displayPriority>
     </recipeMaker>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_Auclair</defName>
-    <label>auclair pistol bullet</label>
+    <defName>Bullet_CrestfallLeverRifle</defName>
+    <label>crestfall lever bullet</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
       <stoppingPower>1.1</stoppingPower>
-      <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationBase>0.2</armorPenetrationBase>
-      <speed>55</speed>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>70</speed>
     </projectile>
   </ThingDef>
 
