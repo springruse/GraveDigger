@@ -202,8 +202,8 @@
       <Mass>2.0</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -263,6 +263,95 @@
       <stoppingPower>0.75</stoppingPower>
       <damageAmountBase>12</damageAmountBase>
       <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- AUCLAIR LEVER PISTOL -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_AuclairLeverPistol</defName>
+    <label>auclair lever pistol</label>
+    <description>A lever-action that was cut down to an extreme degree, earning the common nickname "Mare's Leg". Despite its compact size, it still fires a full rifle caliber but has less accuracy, range, and damage than its full-sized counterpart.\n\nAt a Solace Coalition Outpost, this weapon was cut down by weaponsmiths for their everyday carry. A relatively large force of about a dozen bandits had taken hold of the outpost. Thinking the weaponsmiths were unarmed, they were soon met with a hail of gunfire that caused their downfall.\n\n While the Golden Empire and Royal Nation Peacekeepers were late to the call, they were greeted by a weaponsmith covered in someone else's blood. Two schematics were handed to them, as the man introduced himself as Jean Auclair.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Auclair</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>25</range>
+        <soundCast>AuclairFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Auclair</defName>
+    <label>auclair pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
       <speed>55</speed>
     </projectile>
   </ThingDef>
