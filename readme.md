@@ -17,5 +17,7 @@ A RimWorld mod inspired by the Roblox game GraveDigger.
 - 'Hellion' Automatic Shotgun
 - (More coming soon!)
 
+tldr(12+ guns! + 2 melees!)
+
 ## Installation
 Download and extract to your RimWorld Mods folder.
