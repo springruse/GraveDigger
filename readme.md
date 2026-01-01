@@ -7,6 +7,8 @@ A RimWorld mod inspired by the Roblox game GraveDigger.
 - 'Union' Military Revolver
 - 'Auclair' Lever Action Pistol
 - 'Prince' Long Rifle
+- 'Whisper' Silenced Rifle
+- 'Crestfall' Lever Action Rifle
 - 'Adjudicator' Repeating Rifle
 - 'Equine' Riding Shotgun
 - 'Hellion' Automatic Shotgun
