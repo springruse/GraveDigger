@@ -624,6 +624,96 @@
   </ThingDef>
 
   <!-- ============================================ -->
+  <!-- VOLK SCOPED RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_VolkScopedRifle</defName>
+    <label>volk scoped rifle</label>
+    <description>A scoped rifle designed for extreme precision at long ranges and further out. Has the best accuracy out of any gun, at the cost of it's weight, bulk and handling.\n\nThis weapon was known to be used by one singular man in the Royal Nation - The Wolf. Nobody knows who he truly is, being renowned for being the greatest marksman of his time. Many of his feats and exploits were exaggerated in the years following his death. One of these feats, being over 400 confirmed kills, and his longest shot at 2000m.\n\nWith each ringing shot, an Empiresman would fall over with an audible sound of a howling wolf that struck fear and helplessness onto the next soldier who'd soon meet their demise.\n\nAll legends must meet their demise in some way, and for the Wolf? - He was found weeks later crucified on a stake, his mangled corpse dismembered and obfuscated to those who found him. Nobody knew who took the Wolf's life, but his legacy continues on through this rifle from standard production.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.58</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.93</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_VolkRifle</defaultProjectile>
+        <warmupTime>2.75</warmupTime>
+        <range>50</range>
+        <soundCast>VolkFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_VolkRifle</defName>
+    <label>volk rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.75</stoppingPower>
+      <damageAmountBase>26</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
   <!-- JUDGEMENT BREECH RIFLE -->
   <!-- ============================================ -->
 
