@@ -358,6 +358,95 @@
   </ThingDef>
 
   <!-- ============================================ -->
+  <!-- JESSE COMBAT RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_JesseCombatRifle</defName>
+    <label>jesse combat rifle</label>
+    <description>A superb weapon designed for every combat situation it found itself in. It boasts relatively good stats across the board and stands as a competent yet cursed gun.\n\nA certain group had caught the attention of this rifle, finding it to be the perfect weapon for it's capabilities. Sleek furniture, light-weight, smooth-action, and a huge capacity, putting it well above the rest of the rifles they had.\n\nThe Royal Nation Jaeger Corps had taken hold of the facility making them, forcing them to make these rifles. The workers, however were quite devoted to the Queens cause and her will. Nonetheless their spirits were broken as they were neigh incomparable to zealots from the Lancer Legions.\n\nNot a single word escaped that facility, as the ones still alive and remaining were put to death following the completion of the weapon. This actrocity spread like wildfire, rapidly fueling the Golden Empire's Propaganda toward the Nation, calling them bloodthirsty dogs.\n\nDespite the drama, a certain Sergeant Major would later improve upon its use, dubbing it as the "Mad Minute" Technique to reliably increase it's RPM output.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_JesseRifle</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>32</range>
+        <soundCast>JesseFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_JesseRifle</defName>
+    <label>jesse rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.4</stoppingPower>
+      <damageAmountBase>21</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
   <!-- CRESTFALL LEVER RIFLE -->
   <!-- ============================================ -->
 
