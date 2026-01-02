@@ -89,7 +89,97 @@
     </projectile>
   </ThingDef>
 
-  
+  <!-- ============================================ -->
+  <!-- KNELL SILENCED REVOLVER -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_KnellSilencedRevolver</defName>
+    <label>knell silenced revolver</label>
+    <description>A DoubleAction/SingleAction revolver with a profound technological marvel that no other sidearm saw. With its gas sealed cylinder and Maxim silencer, it is nearly silent. Despite these advantages, its suppressor is rather clunky, making it harder to aim in close quarters.\n\n"I bid you no ill will for hating who we are, Empiresman. It is sad that we had met this way." My revolver's barrel aims up toward his chest.\n\nHe laughs at me with heavy disdain. "Do it, you Nationist dog. I do not care for this pitiful talk."\n\nMy gun fires with a muffled thud, as his body drops. I am sorry, god, but it has to be done. I can hear his bells toll for you, so that they may direct you toward a better life in this meaningless war.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.67</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.81</AccuracyLong>
+      <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <HuntingStealth>0.2</HuntingStealth>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_KnellRevolver</defaultProjectile>
+        <warmupTime>0.25</warmupTime>
+        <range>26</range>
+        <soundCast>KnellFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_KnellRevolver</defName>
+    <label>knell revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
   <!-- ============================================ -->
   <!-- UNION MILITARY PISTOL -->
   <!-- ============================================ -->
@@ -631,7 +721,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_CrestfallLeverRifle</defName>
     <label>crestfall lever rifle</label>
-    <description>A lever-action rifle designed for rapid engagements in close quarters combat. It has good precision and damage, but lacks the proper range and stopping power to stop bigger threats.\n\n"Females are never allowed to be royalty - for if one becomes one, it would show that the Queen was right all along." A fellow monarch spoke toward the table.\n\nThe man in the middle let his tongue drift outward. "My daughter will be given a seat at this table, one way or another. No exceptions," he declared.\n\nA dozen kings within the room stared back at his remark, many filled with pity, shock, and scorn. He was soon brought before the people of Avvalia to stand trial for treason against his people.\n\nIt wasn't long before he began to plead for his own life in a beggar's rags, his royalty and loyalty stripped. He looked down the barrel of his own rifle pointed at his head. No one looked with sympathy or remorse as the Old Guard brought their judgement to fire.</description>
+    <description>A lever-action rifle designed for rapid engagements in close quarters combat. It has good precision and damage, but lacks the proper range and stopping power to stop bigger threats.\n\n"Females are never allowed to be royalty - for if one becomes one, it would show that the Queen was right all along." A fellow monarch spoke toward the table.\n\nThe man in the middle let his tongue drift outward. "My daughter will be given a seat at this table, one way or another. No exceptions," he declared.\n\nA dozen kings within the room stared back at his remark, many filled with pity, shock, and scorn. He was soon brought before his people of Avvalia to stand trial for treason against his own.\n\nIt wasn't long before he began to plead for his own life in a beggar's rags, his royalty and loyalty stripped. He looked down the barrel of his own rifle pointed at his head. No one looked with sympathy or remorse as the Old Guard brought their judgement to fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -892,7 +982,7 @@
   <!-- ============================================ -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>GD_WhisperRifle</defName>
+    <defName>GD_WhisperSilencedRifle</defName>
     <label>whisper silenced rifle</label>
     <description>A unique rifle, equipped with a Maxim silencer for stealth operations in confined areas. While it remains special, it's still a rather generic rifle, often meant for hunting medium to large animals. But it'll handle whatever job you throw at it.\n\nHis voice grew louder in my ear. "Steady your breathing, you won't catch your prey if you keep misaligning your shots." He held the long end of my barrel up for me, guiding it to a target.\n\n"There are dozens of them. Take your shot at the least dangerous one." He gestured toward the nearest target.\n\nI fired, my finger pressing down on the trigger. The man dropped dead, a clean headshot leaving his brain matter against the wall. Nobody was around to hear the body.\n\nHis voice grew noticeably quieter. "Good. Now get rid of the rest before they find their buddy."\n\nWhen I had finally killed the last bug in the outpost, nobody was left standing next to me. The whispers beside me had disappeared, leaving nothing but the cold wind and ambience of the cave to fill my ears.</description>
     <graphicData>
