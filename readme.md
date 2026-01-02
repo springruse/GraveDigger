@@ -3,8 +3,11 @@ A RimWorld mod inspired by the Roblox game GraveDigger.
 
 ## Features
 - Mining pickaxes with multi-use capability! (Breach tool + Mining speed!)
-- 'Grace' Revolver Pistol
-- 'Union' Military Revolver
+- 'Grace' Service Revolver 
+- 'Knell' Silenced Revolver
+- 'Talon' Army Revolver
+- 'Union' Military Pistol
+- 'Honour' Duty Pistol
 - 'Auclair' Lever Action Pistol
 - 'Prince' Long Rifle
 - 'Whisper' Silenced Rifle
@@ -17,7 +20,7 @@ A RimWorld mod inspired by the Roblox game GraveDigger.
 - 'Hellion' Automatic Shotgun
 - (More coming soon!)
 
-tldr(12+ guns! + 2 melees!)
+tldr(15+ guns! + 2 melees!)
 
 ## Installation
 Download and extract to your RimWorld Mods folder.
