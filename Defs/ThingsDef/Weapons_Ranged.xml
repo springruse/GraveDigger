@@ -24,8 +24,8 @@
       <Mass>2.0</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.65</AccuracyMedium>
-      <AccuracyLong>0.45</AccuracyLong>
+      <AccuracyMedium>0.73</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
       <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -106,16 +106,16 @@
     <techLevel>Industrial</techLevel>
     <costList>
       <Steel>50</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
       <WoodLog>10</WoodLog>
     </costList>
     <statBases>
-      <WorkToMake>6000</WorkToMake>
+      <WorkToMake>10000</WorkToMake>
       <Mass>2.0</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.83</AccuracyMedium>
-      <AccuracyLong>0.82</AccuracyLong>
+      <AccuracyLong>0.80</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -180,13 +180,191 @@
   </ThingDef>
   
   <!-- ============================================ -->
+  <!-- TALON ARMY REVOLVER -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_TalonRevolver</defName>
+    <label>talon army revolver</label>
+    <description>A revolver designed for standard army units, offering a balance of accuracy and damage for close to medium range combat through sheer rate of fire.\n\nOne of the many grand designs of the Royal Nation that is produced by themselves, it has stood the test of time that helped to represent the Royal Nation, symbolizing the soaring eagles, henceforth known as the Talon Revolver.\n\nMost famously used in a Empire Shocktrooper assassination attempt on King Helfort and his men, as he used six rounds of .45 flat to drop six assailants dead, leaving zero casualties on the Nation's side.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>.95</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_TalonRevolver</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>20</range>
+        <soundCast>TalonFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_TalonRevolver</defName>
+    <label>talon revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>0.9</stoppingPower>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- HONOUR DUTY PISTOL -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_HonourDutyPistol</defName>
+    <label>honour duty pistol</label>
+    <description>A dated pistol using light rounds, regarded to be ineffective in almost every range but close quarters.\n\nFollowing the war that came to be, orders for extra ammunition skyrocketed as this pistol was vouched by many soldiers along many fronts. It had ten rounds, with feather-like recoil and a complementary stock that could increase one's accuracy. It was surprisingly flexible for pestering enemies from further away or spitting walls of lead to those who came too close to it. Despite its weaker cartridges, it can still kill lest you show yourself open.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>2.4</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HonourPistol</defaultProjectile>
+        <warmupTime>0.30</warmupTime>
+        <range>22</range>
+        <soundCast>HonourFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HonourPistol</defName>
+    <label>honour pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>0.65</stoppingPower>
+      <damageAmountBase>11</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
   <!-- AUCLAIR LEVER PISTOL -->
   <!-- ============================================ -->
   
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_AuclairLeverPistol</defName>
     <label>auclair lever pistol</label>
-    <description>A lever-action that was cut down to an extreme degree, earning the common nickname "Mare's Leg". Despite its compact size, it still fires a full rifle caliber but has less accuracy, range, and damage than its full-sized counterpart.\n\nAt a Solace Coalition Outpost, this weapon was cut down by weaponsmiths for their everyday carry. A relatively large force of about a dozen bandits had taken hold of the outpost. Thinking the weaponsmiths were unarmed, they were soon met with a hail of gunfire that caused their downfall.\n\n While the Golden Empire and Royal Nation Peacekeepers were late to the call, they were greeted by a weaponsmith covered in someone else's blood. Two schematics were handed to them, as the man introduced himself as Jean Auclair.</description>
+    <description>A lever-action that was cut down to an extreme degree, earning the common nickname "Mare's Leg". Despite its compact size, it still fires a full rifle caliber but has less accuracy, range, and damage than its full-sized counterpart.\n\nAt a Solace Coalition Outpost, this weapon was cut down by weaponsmiths for their everyday carry. A relatively large force of about a dozen bandits had taken hold of the outpost. Thinking the weaponsmiths were unarmed, they were soon met with hails of gunfire that caused their downfall.\n\n While the Golden Empire and Royal Nation Peacekeepers were late to the call, they were greeted by a weaponsmith covered in someone else's blood. Two schematics were handed to them, as the man introduced himself as Jean Auclair.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -716,7 +894,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_WhisperRifle</defName>
     <label>whisper silenced rifle</label>
-    <description>A unique rifle, equipped with a maxim silencer for stealth operations in confined areas.\n\nWhile it remains special, it's still a rather generic rifle, often meant for hunting medium to large animals. But, it'll handle whatever job you throw at it.\n\nHis voice grew louder in my ear. "Steady your breathing, you won't catch your prey if you keep misaligning your shots." He held the long end of my barrel up for me, guiding it to a target.\n\n"There are dozens of them. Take your shot at the least dangerous one." He gestured toward the nearest target.\n\nI fired, my finger pressing down on the trigger. The man dropped dead, a clean headshot leaving his brain matter against the wall. Nobody was around to hear the body.\n\nHis voice grew noticeably quieter. "Good. Now get rid of the rest before they find their buddy."\n\nWhen I had finally killed the last bug in the outpost, nobody was left standing next to me. The whispers in my ear had disappeared, leaving nothing but the cold wind and ambience of the cave to fill my ears.</description>
+    <description>A unique rifle, equipped with a Maxim silencer for stealth operations in confined areas. While it remains special, it's still a rather generic rifle, often meant for hunting medium to large animals. But it'll handle whatever job you throw at it.\n\nHis voice grew louder in my ear. "Steady your breathing, you won't catch your prey if you keep misaligning your shots." He held the long end of my barrel up for me, guiding it to a target.\n\n"There are dozens of them. Take your shot at the least dangerous one." He gestured toward the nearest target.\n\nI fired, my finger pressing down on the trigger. The man dropped dead, a clean headshot leaving his brain matter against the wall. Nobody was around to hear the body.\n\nHis voice grew noticeably quieter. "Good. Now get rid of the rest before they find their buddy."\n\nWhen I had finally killed the last bug in the outpost, nobody was left standing next to me. The whispers beside me had disappeared, leaving nothing but the cold wind and ambience of the cave to fill my ears.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
