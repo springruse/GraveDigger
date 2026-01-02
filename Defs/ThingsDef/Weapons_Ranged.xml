@@ -90,6 +90,94 @@
   </ThingDef>
 
   <!-- ============================================ -->
+  <!-- KINGSLAYER PERCUSSION REVOLVER -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_KingslayerRevolver</defName>
+    <label>kingslayer percussion revolver</label>
+    <description>A devastating percussion revolver with good accuracy and stopping power meant to rival anything else that dare stand against it. Despite its lackluster capability for war, due to the slow reload and clunky weight, few use it for the battlefield.\n\nFor centuries, the Kingslayer stood as the ultimate symbol of justice, enacting its righteous will on the many kings that have caused treason and corruption against the Royal Nation. For the Queen, she carries one herself, for an entirely different purpose.\n\n"A reign does not end until there are no kings left," she said before her court. "It only ends when there are none to be crowned one."</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>4.0</Mass>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_KingslayerRevolver</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>26</range>
+        <soundCast>KingslayerFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_KingslayerRevolver</defName>
+    <label>kingslayer revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>2.5</stoppingPower>
+      <damageAmountBase>24</damageAmountBase>
+      <armorPenetrationBase>0.30</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
   <!-- KNELL SILENCED REVOLVER -->
   <!-- ============================================ -->
   <ThingDef ParentName="BaseHumanMakeableGun">
