@@ -625,6 +625,92 @@
   </ThingDef>
 
   <!-- ============================================ -->
+  <!-- NEGOTIATOR POCKET SHOTGUN -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_NegotiatorShotgun</defName>
+    <label>negotiator pocket shotgun</label>
+    <description>A hastily made single shot shotgun designed for emergency use in tight spaces. It was cut to an even smaller profile while having virtually no range beyond extreme close quarters. It still has incredible handling and upmost power when you truly need it, though.\n\n"You and I are a lot alike, Solace worker, we both work to survive in this cave," My short shotgun twirls around my fingers, as I insert a shell in.\n\n"But, I need to know the floor plans of this facility so me and my boys can raid it."\n\nHis weary face looks back toward me as he recognizes my gun. He doesn't say a word, but I know other methods just like those dirty royalist Jaegers.\n\n"I'm sure a sweet deal between a bandit and worker would do you splendid, so what say you and I cooperate? Otherwise, my little negotiator here will do the talking for us instead."</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.8</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_NegotiatorShotgun</defaultProjectile>
+        <warmupTime>0.85</warmupTime>
+        <range>12</range>
+        <soundCast>NegotiatorFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_NegotiatorShotgun</defName>
+    <label>negotiator shotgun pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3</stoppingPower>
+      <damageAmountBase>24</damageAmountBase>
+      <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
   <!-- PRINCE LONG RIFLE -->
   <!-- ============================================ -->
 
