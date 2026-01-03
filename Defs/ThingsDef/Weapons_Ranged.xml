@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================ -->
+  <!-- GRACE SERVICE REVOLVER -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_GraceRevolver</defName>
+    <label>grace service revolver</label>
+    <description>A small, yet powerful revolver. This firearm has recently begun appearing on RimWorlds where two factions have been at war for decades.\n\nA Golden Empire-made weapon, prized for its reliability, lethality, and precision in a compact form. Often used as a primary sidearm rather than a backup due to its effectiveness.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.73</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_GraceRevolver</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>27</range>
+        <soundCast>GraceFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_GraceRevolver</defName>
+    <label>grace revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.2</stoppingPower>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- KINGSLAYER PERCUSSION REVOLVER -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_KingslayerRevolver</defName>
+    <label>kingslayer percussion revolver</label>
+    <description>A devastating percussion revolver with good accuracy and stopping power meant to rival anything else that dare stand against it. Despite its lackluster capability for war, due to the slow reload and clunky weight, few use it for the battlefield.\n\nFor centuries, the Kingslayer stood as the ultimate symbol of justice, enacting its righteous will on the many kings that have caused treason and corruption against the Royal Nation. For the Queen, she carries one herself, for an entirely different purpose.\n\n"A reign does not end until there are no kings left," she said before her court. "It only ends when there are none to be crowned one."</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>4.0</Mass>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_KingslayerRevolver</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>26</range>
+        <soundCast>KingslayerFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_KingslayerRevolver</defName>
+    <label>kingslayer revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>2.5</stoppingPower>
+      <damageAmountBase>24</damageAmountBase>
+      <armorPenetrationBase>0.30</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- KNELL SILENCED REVOLVER -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_KnellSilencedRevolver</defName>
+    <label>knell silenced revolver</label>
+    <description>A DoubleAction/SingleAction revolver with a profound technological marvel that no other sidearm saw. With its gas sealed cylinder and Maxim silencer, it is nearly silent. Despite these advantages, its suppressor is rather clunky, making it harder to aim in close quarters.\n\n"I bid you no ill will for hating who we are, Empiresman. It is sad that we had met this way." My revolver's barrel aims up toward his chest.\n\nHe laughs at me with heavy disdain. "Do it, you Nationist dog. I do not care for this pitiful talk."\n\nMy gun fires with a muffled thud, as his body drops. I am sorry, god, but it has to be done. I can hear his bells toll for you, so that they may direct you toward a better life in this meaningless war.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.67</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.81</AccuracyLong>
+      <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <HuntingStealth>0.2</HuntingStealth>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_KnellRevolver</defaultProjectile>
+        <warmupTime>0.25</warmupTime>
+        <range>26</range>
+        <soundCast>KnellFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_KnellRevolver</defName>
+    <label>knell revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- UNION MILITARY PISTOL -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_UnionPistol</defName>
+    <label>union military pistol</label>
+    <description>A small long ranged pistol, having profound range, accuracy, and damage. Chambered in a smaller caliber, 9mm lead, it stands as a reliable sidearm for all ranges.\n\nA remarkably well-made gun for its time, being made between Solace Coalition and the Royal Nation due to the need for a higher capacity, longer ranged pistol that could rival the Grace Revolver.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_UnionPistol</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>29</range>
+        <soundCast>UnionFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_UnionPistol</defName>
+    <label>union pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>0.75</stoppingPower>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ============================================ -->
+  <!-- TALON ARMY REVOLVER -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_TalonRevolver</defName>
+    <label>talon army revolver</label>
+    <description>A revolver designed for standard army units, offering a balance of accuracy and damage for close to medium range combat through sheer rate of fire.\n\nOne of the many grand designs of the Royal Nation that is produced by themselves, it has stood the test of time that helped to represent the Royal Nation, symbolizing the soaring eagles, henceforth known as the Talon Revolver.\n\nMost famously used in a Empire Shocktrooper assassination attempt on King Helfort and his men, as he used six rounds of .45 flat to drop six assailants dead, leaving zero casualties on the Nation's side.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>.95</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_TalonRevolver</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>20</range>
+        <soundCast>TalonFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_TalonRevolver</defName>
+    <label>talon revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>0.9</stoppingPower>
+      <damageAmountBase>13</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- HONOUR DUTY PISTOL -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_HonourDutyPistol</defName>
+    <label>honour duty pistol</label>
+    <description>A dated pistol using light rounds, regarded to be ineffective in almost every range but close quarters.\n\nFollowing the war that came to be, orders for extra ammunition skyrocketed as this pistol was vouched by many soldiers along many fronts. It had ten rounds, with feather-like recoil and a complementary stock that could increase one's accuracy. It was surprisingly flexible for pestering enemies from further away or spitting walls of lead to those who came too close to it. Despite its weaker cartridges, it can still kill lest you show yourself open.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>2.4</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HonourPistol</defaultProjectile>
+        <warmupTime>0.30</warmupTime>
+        <range>22</range>
+        <soundCast>HonourFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HonourPistol</defName>
+    <label>honour pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>0.65</stoppingPower>
+      <damageAmountBase>11</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- AUCLAIR LEVER PISTOL -->
+  <!-- ============================================ -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_AuclairLeverPistol</defName>
+    <label>auclair lever pistol</label>
+    <description>A lever-action that was cut down to an extreme degree, earning the common nickname "Mare's Leg". Despite its compact size, it still fires a full rifle caliber but has less accuracy, range, and damage than its full-sized counterpart.\n\nAt a Solace Coalition Outpost, this weapon was cut down by weaponsmiths for their everyday carry. A relatively large force of about a dozen bandits had taken hold of the outpost. Thinking the weaponsmiths were unarmed, they were soon met with hails of gunfire that caused their downfall.\n\n While the Golden Empire and Royal Nation Peacekeepers were late to the call, they were greeted by a weaponsmith covered in someone else's blood. Two schematics were handed to them, as the man introduced himself as Jean Auclair.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Auclair</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>25</range>
+        <soundCast>AuclairFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Auclair</defName>
+    <label>auclair pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- NEGOTIATOR POCKET SHOTGUN -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_NegotiatorShotgun</defName>
+    <label>negotiator pocket shotgun</label>
+    <description>A hastily made single shot shotgun designed for emergency use in tight spaces. It was cut to an even smaller profile while having virtually no range beyond extreme close quarters. It still has incredible handling and upmost power when you truly need it, though.\n\n"You and I are a lot alike, Solace worker, we both work to survive in this cave," My short shotgun twirls around my fingers, as I insert a shell in.\n\n"But, I need to know the floor plans of this facility so me and my boys can raid it."\n\nHis weary face looks back toward me as he recognizes my gun. He doesn't say a word, but I know other methods just like those dirty royalist Jaegers.\n\n"I'm sure a sweet deal between a bandit and worker would do you splendid, so what say you and I cooperate? Otherwise, my little negotiator here will do the talking for us instead."</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.8</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_NegotiatorShotgun</defaultProjectile>
+        <warmupTime>0.85</warmupTime>
+        <range>12</range>
+        <soundCast>NegotiatorFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_NegotiatorShotgun</defName>
+    <label>negotiator shotgun pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3</stoppingPower>
+      <damageAmountBase>24</damageAmountBase>
+      <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- PRINCE LONG RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_PrinceRifle</defName>
+    <label>prince long rifle</label>
+    <description>A gold standard long-range rifle that was cut down for cave fighting. Despite a shortened barrel, it retains good accuracy and power.\n\nBoth the Golden Empire and Royal Nation have used this weapon extensively across their campaigns, leading its global familiarization. A jack of all trades, yet master of none. It is most famously nicknamed "Prince" due to causing the death of Prince Leido of the Royal Nation, which started the war between the two factions.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PrinceRifle</defaultProjectile>
+        <warmupTime>1.85</warmupTime>
+        <range>34.5</range>
+        <soundCast>PrinceFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PrinceRifle</defName>
+    <label>prince rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.55</stoppingPower>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- JESSE COMBAT RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_JesseCombatRifle</defName>
+    <label>jesse combat rifle</label>
+    <description>A superb weapon designed for every combat situation it found itself in. It boasts relatively good stats across the board and stands as a competent yet cursed gun.\n\nA certain group had caught the attention of this rifle, finding it to be the perfect weapon for it's capabilities. Sleek furniture, light-weight, smooth-action, and a huge capacity, putting it well above the rest of the rifles they had.\n\nThe Royal Nation Jaeger Corps had taken hold of the facility making them, forcing them to make these rifles. The workers, however were quite devoted to the Queens cause and her will. Nonetheless their spirits were broken as they were nigh incomparable to zealots from the Lancer Legions.\n\nNot a single word escaped that facility, as the ones still alive and remaining were put to death following the completion of the weapon. This actrocity spread like wildfire, rapidly fueling the Golden Empire's propaganda toward the Nation, calling them bloodthirsty dogs.\n\nDespite the drama, a certain Sergeant Major would later improve upon its use, dubbing it as the "Mad Minute" Technique to reliably increase it's RPM output.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_JesseRifle</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>32</range>
+        <soundCast>JesseFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_JesseRifle</defName>
+    <label>jesse rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.4</stoppingPower>
+      <damageAmountBase>21</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- CRESTFALL LEVER RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_CrestfallLeverRifle</defName>
+    <label>crestfall lever rifle</label>
+    <description>A lever-action rifle designed for rapid engagements in close quarters combat. It has good precision and damage, but lacks the proper range and stopping power to stop bigger threats.\n\n"Females are never allowed to be royalty - for if one becomes one, it would show that the Queen was right all along." A fellow monarch spoke toward the table.\n\nThe man in the middle let his tongue drift outward. "My daughter will be given a seat at this table, one way or another. No exceptions," he declared.\n\nA dozen kings within the room stared back at his remark, many filled with pity, shock, and scorn. He was soon brought before his people of Avvalia to stand trial for treason against his own.\n\nIt wasn't long before he began to plead for his own life in a beggar's rags, his royalty and loyalty stripped. He looked down the barrel of his own rifle pointed at his head. No one looked with sympathy or remorse as the Old Guard brought their judgement to fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>20</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+        <li>ShortShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CrestfallLeverRifle</defaultProjectile>
+        <warmupTime>1.50</warmupTime>
+        <range>30</range>
+        <soundCast>CrestfallFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CrestfallLeverRifle</defName>
+    <label>crestfall lever bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- EQUINE RIDING SHOTGUN -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_EquineShotgun</defName>
+    <label>equine riding shotgun</label>
+    <description>A shotgun designated for horse riders, sporting long two barrels and a single trigger. It seems to have found it's place in the caves, decimating enemies with unparalleled efficiency with it's accurate range and damage. It seems to have been modified to fire both barrels simultaneously.\n\nMost famously used to annhilate a Royal Nation Guardhouse, who had previously assassinated a Grand Inquisitor in the the Golden Empire's sacred grounds.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.83</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_EquineShotgun</defaultProjectile>
+        <warmupTime>1.85</warmupTime>
+        <range>20</range>
+        <soundCast>EquineFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_EquineShotgun</defName>
+    <label>equine shotgun pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3</stoppingPower>
+      <damageAmountBase>19</damageAmountBase>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- HELLION AUTOMATIC SHOTGUN -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_HellionShotgun</defName>
+    <label>hellion automatic shotgun</label>
+    <description>A complex yet deadly automatic shotgun, designed for extreme rapid firepower and volume of fire. Boasts high accuracy and rate of fire to offset its lower damage. Just keep pressing the trigger as fast as you can.\n\nMeant to rival the Golden Empire's Equine, it was used in a Royal Nation propaganda film, 'The Hellion', to depict its true capabilities compared to the cultist's inferior shotgun. Thus, it earned its rightful name as the "Hellion" automatic shotgun, despite never having split blood for its own name.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <WoodLog>20</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HellionShotgun</defaultProjectile>
+        <warmupTime>0.85</warmupTime>
+        <range>18</range>
+        <soundCast>HellionFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HellionShotgun</defName>
+    <label>hellion shotgun pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- WHISPER SILENCED RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_WhisperSilencedRifle</defName>
+    <label>whisper silenced rifle</label>
+    <description>A unique rifle, equipped with a Maxim silencer for stealth operations in confined areas. While it remains special, it's still a rather generic rifle, often meant for hunting medium to large animals. But it'll handle whatever job you throw at it.\n\nHis voice grew louder in my ear. "Steady your breathing, you won't catch your prey if you keep misaligning your shots." He held the long end of my barrel up for me, guiding it to a target.\n\n"There are dozens of them. Take your shot at the least dangerous one." He gestured toward the nearest target.\n\nI fired, my finger pressing down on the trigger. The man dropped dead, a clean headshot leaving his brain matter against the wall. Nobody was around to hear the body.\n\nHis voice grew noticeably quieter. "Good. Now get rid of the rest before they find their buddy."\n\nWhen I had finally killed the last bug in the outpost, nobody was left standing next to me. The whispers beside me had disappeared, leaving nothing but the cold wind and ambience of the cave to fill my ears.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>90</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <HuntingStealth>0.4</HuntingStealth>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_WhisperRifle</defaultProjectile>
+        <warmupTime>1.75</warmupTime>
+        <range>39</range>
+        <soundCast>WhisperFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_WhisperRifle</defName>
+    <label>whisper rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.5</stoppingPower>
+      <damageAmountBase>22</damageAmountBase>
+      <armorPenetrationBase>0.29</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- VOLK SCOPED RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_VolkScopedRifle</defName>
+    <label>volk scoped rifle</label>
+    <description>A scoped rifle designed for extreme precision at long ranges and further out. Has the best accuracy out of any gun, at the cost of it's weight, bulk and handling.\n\nThis weapon was known to be used by one singular man in the Royal Nation - The Wolf. Nobody knows who he truly is, being renowned for being the greatest marksman of his time. Many of his feats and exploits were exaggerated in the years following his death. One of these feats, being over 400 confirmed kills, and his longest shot at 2000m.\n\nWith each ringing shot, an Empiresman would fall over with an audible sound of a howling wolf that struck fear and helplessness onto the next soldier who'd soon meet their demise.\n\nAll legends must meet their destination in some way, and for the Wolf? - He was found weeks later crucified on a stake, his mangled corpse dismembered and obfuscated to those who found him. Nobody knew who took the Wolf's life, but his legacy continues on through this rifle from standard production.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.58</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.93</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_VolkRifle</defaultProjectile>
+        <warmupTime>2.75</warmupTime>
+        <range>50</range>
+        <soundCast>VolkFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_VolkRifle</defName>
+    <label>volk rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.75</stoppingPower>
+      <damageAmountBase>26</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- JUDGEMENT BREECH RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_JudgementBreechRifle</defName>
+    <label>judgement breech rifle</label>
+    <description>A breech loading rifle with extreme damage capabilities. It's sheer power and good precision define its place to judge those who are facing the wrong end of it. Despite it's power, it's handling is rather cumbersome due to the added bayonet and overall weight of the weapon.\n\nA Golden Empire made weapon meant to solve problems with holes that can't be closed. Rumors spark that it was used to shut down an elite squadron of Royal Nation soldiers, nicknamed "Able Four", skewering the elite group's spirit to be nothing less than a mirror of what they truly once were.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.89</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_JudgementRifle</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>41</range>
+        <soundCast>JudgementFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>bayonet</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_JudgementRifle</defName>
+    <label>judgement breech bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>3.2</stoppingPower>
+      <damageAmountBase>29</damageAmountBase>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- ADJUDICATOR REPEATING RIFLE -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_AdjudicatorRepeatingRifle</defName>
+    <label>adjudicator repeating rifle</label>
+    <description>A repeating rifle with fast firing capability. It is rather clunky and moderately complex, but spews out lead like its nothing.\n\nAfter the 17th, all Prince rifles inside the Golden Empire's armory were lost, leaving them without a major standalone weapon to fight back against the Royal Nation. Thus, a under the table deal was made with Solace Coalition to use the Prince's rifle frame under a new gun. It became a rather unfavorable rifle due to the less pressurized bullets which failed to occasionally catch the bolt and inconsistent fouling. Nonetheless, it stood as their saving grace.\n\nThe Royal Nation had also seen its use, and wanted a schematic, offering the lost Prince Rifles back to the Golden Empire as a tradeoff. Despite this, they agreed and met up, only for the Royal Nation's cart to end up completely surrounded by them on all sides by said rifle.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>25</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.83</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AdjudicatorRifle</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>32</range>
+        <soundCast>AdjudicatorFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AdjudicatorRifle</defName>
+    <label>adjudicator repeating bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.2</stoppingPower>
+      <damageAmountBase>22</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ============================================ -->
+  <!-- OKHOTNIK HUNTING CROSSBOW -->
+  <!-- ============================================ -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_OkhotnikHuntingCrossbow</defName>
+    <label>okhotnik hunting crossbow</label>
+    <description>An old hunting crossbow that somehow found its way to cave-fighting. It seems to do well for what it can do in a world where everyone has firearms. Theres not much to say about it.\n\nSeeing very limited use in combat, it was mostly used for hunting rodents and small animals for rations. Given the rough environments soldiers were constantly in, it served as a reliably fun tool to start little shooting contests with each other in the caves to keep morale up.\n\nOther soldiers like the Jaegers had also seen some light use, as it was the most quiet weapon compared to any firearm they had, coating their tips with pox.\n\nEven with very little showcase, stories ramp its fear through bolts tearing through soldiers' flesh, making quick surgery long, painful and grueling, a symbol that the Golden Empire embodies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowGreat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Neolithic</techLevel>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <WoodLog>90</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <HuntingStealth>0.2</HuntingStealth>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>Hunting</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_Okhotnik</defaultProjectile>
+        <warmupTime>1.85</warmupTime>
+        <range>33</range>
+        <soundCast>OkhotnikFire</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Stab</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>416</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Arrow_Okhotnik</defName>
+    <label>okhotnik hunting arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <stoppingPower>1.25</stoppingPower>
+      <damageAmountBase>19</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+</Defs>
