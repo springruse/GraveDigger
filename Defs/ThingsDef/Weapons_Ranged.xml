@@ -75,7 +75,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_GraceRevolver</defName>
-    <label>grace revolver bullet</label>
+    <label>Grace revolver bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -163,7 +163,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_KingslayerRevolver</defName>
-    <label>kingslayer revolver bullet</label>
+    <label>Kingslayer revolver bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -254,7 +254,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_KnellRevolver</defName>
-    <label>knell revolver bullet</label>
+    <label>Knell revolver bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -343,7 +343,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_UnionPistol</defName>
-    <label>union pistol bullet</label>
+    <label>Union pistol bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -432,7 +432,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_TalonRevolver</defName>
-    <label>talon revolver bullet</label>
+    <label>Talon revolver bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -521,7 +521,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_HonourPistol</defName>
-    <label>honour pistol bullet</label>
+    <label>Honour pistol bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -610,7 +610,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Auclair</defName>
-    <label>auclair pistol bullet</label>
+    <label>Auclair pistol bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -620,6 +620,94 @@
       <stoppingPower>1.1</stoppingPower>
       <damageAmountBase>18</damageAmountBase>
       <armorPenetrationBase>0.2</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- HOPE AUTOMATIC PISTOL -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_HopeAutomaticPistol</defName>
+    <label>hope automatic pistol</label>
+    <description>A legendary automatic pistol that has seen wars and won battles. It is incredibly reliable and robust, having almost no known issues.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>18500</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HopePistol</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>28</range>
+        <soundCast>HopeFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>401</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HopePistol</defName>
+    <label>Hope pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.0</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <speed>55</speed>
     </projectile>
   </ThingDef>
@@ -696,7 +784,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_NegotiatorShotgun</defName>
-    <label>negotiator shotgun pellet</label>
+    <label>Negotiator shotgun pellet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -785,7 +873,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_PrinceRifle</defName>
-    <label>prince rifle bullet</label>
+    <label>Prince rifle bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -874,7 +962,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_JesseRifle</defName>
-    <label>jesse rifle bullet</label>
+    <label>Jesse rifle bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -963,7 +1051,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_CrestfallLeverRifle</defName>
-    <label>crestfall lever bullet</label>
+    <label>Crestfall lever bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1051,7 +1139,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_EquineShotgun</defName>
-    <label>equine shotgun pellet</label>
+    <label>Equine shotgun pellet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1137,7 +1225,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_HellionShotgun</defName>
-    <label>hellion shotgun pellet</label>
+    <label>Hellion shotgun pellet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1230,7 +1318,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_WhisperRifle</defName>
-    <label>whisper rifle bullet</label>
+    <label>Whisper rifle bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1320,7 +1408,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_VolkRifle</defName>
-    <label>volk rifle bullet</label>
+    <label>Volk rifle bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1411,7 +1499,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_JudgementRifle</defName>
-    <label>judgement breech bullet</label>
+    <label>Judgement breech bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1503,7 +1591,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_AdjudicatorRifle</defName>
-    <label>adjudicator repeating bullet</label>
+    <label>Adjudicator repeating bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1586,7 +1674,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Arrow_Okhotnik</defName>
-    <label>okhotnik hunting arrow</label>
+    <label>Okhotnik hunting arrow</label>
     <graphicData>
       <texPath>Things/Projectile/Arrow_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
