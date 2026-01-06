@@ -45,6 +45,8 @@
 				<power>14</power>
 				<cooldownTime>1.75</cooldownTime>
 				<armorPenetration>0.15</armorPenetration>
+				<soundMeleeMiss>PickaxeMiss</soundMeleeMiss>
+				<soundMeleeHit>PickaxeHit</soundMeleeHit>
 			</li>
 			<li>
 				<label>head</label>
@@ -53,6 +55,8 @@
 				</capacities>
 				<power>18</power>
 				<cooldownTime>1.25</cooldownTime>
+				<soundMeleeMiss>PickaxeMiss2</soundMeleeMiss>
+				<soundMeleeHit>PickaxeHit2</soundMeleeHit>
 			</li>
 		</tools>
 		<recipeMaker>
@@ -109,6 +113,8 @@
 				<power>21</power>
 				<cooldownTime>2.25</cooldownTime>
 				<armorPenetration>0.40</armorPenetration>
+				<soundMeleeMiss>HeavyPickaxeMiss</soundMeleeMiss>
+				<soundMeleeHit>HeavyPickaxeHit</soundMeleeHit>
 			</li>
 			<li>
 				<label>head</label>
@@ -117,6 +123,8 @@
 				</capacities>
 				<power>30</power>
 				<cooldownTime>2.25</cooldownTime>
+				<soundMeleeMiss>HeavyPickaxeMiss2</soundMeleeMiss>
+				<soundMeleeHit>HeavyPickaxeHit2</soundMeleeHit>
 			</li>
 		</tools>
 		<recipeMaker>
@@ -152,7 +160,7 @@
 			<MaxHitPoints>175</MaxHitPoints>
 		</statBases>
 		<equippedStatOffsets>
-			<ConstructionSpeedFactor>0.25</ConstructionSpeedFactor>
+			<ConstructionSpeedFactor>0.35</ConstructionSpeedFactor>
 		</equippedStatOffsets>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<tools>
@@ -163,6 +171,8 @@
 				</capacities>
 				<power>8</power>
 				<cooldownTime>2</cooldownTime>
+				<soundMeleeMiss>ConstructHammerMiss2</soundMeleeMiss>
+				<soundMeleeHit>ConstructHammerHit2</soundMeleeHit>
 			</li>
 			<li>
 				<label>head</label>
@@ -171,6 +181,8 @@
 				</capacities>
 				<power>12</power>
 				<cooldownTime>2</cooldownTime>
+				<soundMeleeMiss>ConstructHammerMiss</soundMeleeMiss>
+				<soundMeleeHit>ConstructHammerHit</soundMeleeHit>
 			</li>
 		</tools>
 		<recipeMaker>
@@ -224,16 +236,18 @@
 				<power>20</power>
 				<cooldownTime>1.85</cooldownTime>
 				<armorPenetration>0.2</armorPenetration>
-				<SoundMeleeMiss></SoundMeleeMiss>
+				<soundMeleeMiss>CavalrySwordMiss2</soundMeleeMiss>
+				<soundMeleeHit>CavalrySwordHit2</soundMeleeHit>
 			</li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>18</power>
+				<power>16</power>
 				<cooldownTime>1.75</cooldownTime>
-				<SoundMeleeMiss></SoundMeleeMiss>
+				<soundMeleeMiss>CavalrySwordMiss</soundMeleeMiss>
+				<soundMeleeHit>CavalrySwordHit</soundMeleeHit>
 			</li>
 		</tools>
 		<recipeMaker>
@@ -280,22 +294,26 @@
 				<cooldownTime>1.75</cooldownTime>
 			</li>
 			<li>
-				<label>edge</label>
+				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
 				<power>30</power>
-				<cooldownTime>1.65</cooldownTime>
+				<cooldownTime>2</cooldownTime>
 				<armorPenetration>0.3</armorPenetration>
+				<soundMeleeMiss>HeavyLanceStabMiss</soundMeleeMiss>
+				<soundMeleeHit>HeavyLanceHit</soundMeleeHit>
 			</li>
 			<li>
-				<label>point</label>
+				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
 				<power>25</power>
-				<cooldownTime>1.65</cooldownTime>
+				<cooldownTime>1.85</cooldownTime>
 				<armorPenetration>0.25</armorPenetration>
+				<soundMeleeMiss>HeavyLanceSwingMiss</soundMeleeMiss>
+				<soundMeleeHit>HeavyLanceHit2</soundMeleeHit>
 			</li>
 		</tools>
 		<recipeMaker>
