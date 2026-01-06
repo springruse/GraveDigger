@@ -630,7 +630,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>GD_HopeAutomaticPistol</defName>
     <label>hope automatic pistol</label>
-    <description>A legendary automatic pistol that has seen wars and won battles. It is incredibly reliable and robust, having almost no known issues.</description>
+    <description>A legendary automatic pistol that has seen wars and won battles. It is incredibly reliable and robust, having almost no known issues.\n\nHaving served multiple wars, it has earned the hard earned respect from its users.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -649,7 +649,7 @@
       <AccuracyShort>0.86</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -662,8 +662,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_HopePistol</defaultProjectile>
-        <warmupTime>0.55</warmupTime>
-        <range>28</range>
+        <warmupTime>0.85</warmupTime>
+        <range>25</range>
         <soundCast>HopeFire</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -705,10 +705,91 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <stoppingPower>1.0</stoppingPower>
-      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>0.75</stoppingPower>
+      <damageAmountBase>17</damageAmountBase>
       <armorPenetrationBase>0.25</armorPenetrationBase>
       <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ============================================ -->
+  <!-- FORLORN HOPE AUTOMATIC PISTOL -->
+  <!-- ============================================ -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GD_ForlornHopeAutomaticPistol</defName>
+    <label>forlorn hope automatic pistol</label>
+    <description>A heavily modified automatic pistol that has been extensively altered for both good and worse.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <possessionCount>0</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>0</WorkToMake>
+      <Mass>2.25</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.89</AccuracyMedium>
+      <AccuracyLong>0.84</AccuracyLong>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ForlornHopePistol</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>27</range>
+        <soundCast>HopeFire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ForlornHopePistol</defName>
+    <label>Forlorn Hope pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <stoppingPower>1.1</stoppingPower>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>65</speed>
     </projectile>
   </ThingDef>
 
@@ -824,7 +905,7 @@
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.92</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -837,7 +918,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_PrinceRifle</defaultProjectile>
-        <warmupTime>1.85</warmupTime>
+        <warmupTime>1.75</warmupTime>
         <range>34.5</range>
         <soundCast>PrinceFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -913,7 +994,7 @@
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.82</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -926,7 +1007,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_JesseRifle</defaultProjectile>
-        <warmupTime>1.25</warmupTime>
+        <warmupTime>1.15</warmupTime>
         <range>32</range>
         <soundCast>JesseFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1002,7 +1083,7 @@
       <AccuracyShort>0.83</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.65</AccuracyLong>
-      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -1015,7 +1096,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CrestfallLeverRifle</defaultProjectile>
-        <warmupTime>1.50</warmupTime>
+        <warmupTime>1.25</warmupTime>
         <range>30</range>
         <soundCast>CrestfallFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1265,7 +1346,7 @@
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.90</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
     </statBases>
     <equippedStatOffsets>
       <HuntingStealth>0.4</HuntingStealth>
@@ -1282,7 +1363,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_WhisperRifle</defaultProjectile>
-        <warmupTime>1.75</warmupTime>
+        <warmupTime>1.45</warmupTime>
         <range>39</range>
         <soundCast>WhisperFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1357,7 +1438,7 @@
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.58</AccuracyShort>
       <AccuracyMedium>0.92</AccuracyMedium>
-      <AccuracyLong>0.93</AccuracyLong>
+      <AccuracyLong>0.94</AccuracyLong>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -1372,7 +1453,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_VolkRifle</defaultProjectile>
-        <warmupTime>2.75</warmupTime>
+        <warmupTime>2.65</warmupTime>
         <range>50</range>
         <soundCast>VolkFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1464,7 +1545,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_JudgementRifle</defaultProjectile>
-        <warmupTime>2.5</warmupTime>
+        <warmupTime>2.45</warmupTime>
         <range>41</range>
         <soundCast>JudgementFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1539,7 +1620,7 @@
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.83</AccuracyMedium>
       <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
@@ -1555,7 +1636,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_AdjudicatorRifle</defaultProjectile>
-        <warmupTime>1.25</warmupTime>
+        <warmupTime>1.10</warmupTime>
         <range>32</range>
         <soundCast>AdjudicatorFire</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1648,7 +1729,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Arrow_Okhotnik</defaultProjectile>
-        <warmupTime>1.85</warmupTime>
+        <warmupTime>1.65</warmupTime>
         <range>33</range>
         <soundCast>OkhotnikFire</soundCast>
       </li>
