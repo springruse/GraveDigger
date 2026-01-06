@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <SoundDef>
-    <defName>OkhotnikFire</defName>
+    <defName>NegotiatorFire</defName>
     <context>MapOnly</context>
     <eventNames />
     <maxSimultaneous>4</maxSimultaneous>
@@ -9,10 +9,10 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Weapons/OkhotnikFire</clipPath>
+            <clipPath>Weapons/Ranged/NegotiatorFire</clipPath>
           </li>
         </grains>
-        <volumeRange>40</volumeRange>
+        <volumeRange>85</volumeRange>
         <pitchRange>0.95~1.1</pitchRange>
       </li>
     </subSounds>

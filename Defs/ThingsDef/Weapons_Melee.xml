@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <!-- ============================================ -->
   <!-- MINING PICK -->
   <!-- ============================================ -->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>GD_PickaxeSmall</defName>
-		<label>Mining Pick</label>
+		<label>mining pick</label>
 		<description>A small pickaxe used by soldiers, civilians, and bandits alike. Familiar to any person that exists on any rimworld. \n\nAlthough it is a simple tool, it has been used ever since everyone went underground. Better than digging or mining with your hands. \n\nHas breach tool capabilities, being stronger than a breach axe.</description>
 		<possessionCount>1</possessionCount>
 		<stuffCategories>
@@ -70,7 +69,7 @@
   <!-- ============================================ -->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>GD_PickaxeLarge</defName>
-		<label>Heavy Pickaxe</label>
+		<label>heavy pickaxe</label>
 		<description>A heavier pickaxe carried by Rooks. It is a stronger tool meant to easily chew through rocks, debris, and sometimes people. It is heavier in durability and weight compared to standard pickaxes. \n\nAll Rooks are trained in its use, as it rests as their standard tool meant for mining and breaching operations. These soldiers are used as sappers during raids and assaults, building defensive and offensive fortifications as needed. \n\nHas similar breach tool capabilities to the Breach Axe, being more effective but slower due to it's size and strength needed to operate it.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
@@ -128,5 +127,183 @@
 			<displayPriority>409</displayPriority>
 		</recipeMaker>
 	</ThingDef>
-
+	
+	<!-- ============================================ -->
+  	<!-- CONSTRUCT HAMMER -->
+  	<!-- ============================================ -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>GD_HammerConstruct</defName>
+		<label>construct hammer</label>
+		<description>A hammer meant for construction and repair work. Rooks carry this to rapidly set up structures and repair damaged buildings. Fairly ineffective as a weapon, but its better than your hands.</description>
+		<possessionCount>0</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<defaultStuff>Steel</defaultStuff>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>2.0</Mass>
+			<MaxHitPoints>175</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeedFactor>0.25</ConstructionSpeedFactor>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>409</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ============================================ -->
+  	<!-- CALVARY SWORD -->
+  	<!-- ============================================ -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>GD_CavalrySword</defName>
+		<label>calvary sword</label>
+		<description>A long blade often used by calvary to ruthlessly cut through enemies, being carried by soldiers and officers.\n\nThroughout cave-fighting, hand to hand combat re-surfaced due to how close soldiers fought each other. Even with tinier weapons such as blades and maces, some soldiers wanted a higher level of reach and lethality, opting to carry an entire sword over a backup instead.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Longsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<defaultStuff>Steel</defaultStuff>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>3</Mass>
+			<MaxHitPoints>175</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.75</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.85</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+				<SoundMeleeMiss></SoundMeleeMiss>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.75</cooldownTime>
+				<SoundMeleeMiss></SoundMeleeMiss>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>409</displayPriority>
+		</recipeMaker>
+	</ThingDef>
+	<!-- ============================================ -->
+  	<!-- HEAVY LANCE -->
+  	<!-- ============================================ -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>GD_HeavyLance</defName>
+		<label>heavy lance</label>
+		<description>A long, heavy spear used by Lancers of each opposing faction.\n\nFanatical warriors they are, charging headfirst into the enemy breaking lines and morale. Their wrath and loyalty are unmatched in the field of battle, for they are called the Lancer Legion. Undeterminable and frightening, for they never relent.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Longsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>160</costStuffCount>
+		<defaultStuff>Steel</defaultStuff>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>5</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.75</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.65</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.65</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>409</displayPriority>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

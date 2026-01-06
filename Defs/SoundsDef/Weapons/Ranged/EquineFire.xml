@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <SoundDef>
-    <defName>CrestfallFire</defName>
+    <defName>EquineFire</defName>
     <context>MapOnly</context>
     <eventNames />
     <maxSimultaneous>4</maxSimultaneous>
@@ -9,10 +9,10 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Weapons/CrestfallFire</clipPath>
+            <clipPath>Weapons/Ranged/EquineFire</clipPath>
           </li>
         </grains>
-        <volumeRange>75</volumeRange>
+        <volumeRange>85</volumeRange>
         <pitchRange>0.95~1.1</pitchRange>
       </li>
     </subSounds>

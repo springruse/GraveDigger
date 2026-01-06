@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <SoundDef>
-    <defName>TalonFire</defName>
+    <defName>AuclairFire</defName>
     <context>MapOnly</context>
     <eventNames />
     <maxSimultaneous>4</maxSimultaneous>
@@ -9,7 +9,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Weapons/TalonFire</clipPath>
+            <clipPath>Weapons/Ranged/AuclairFire</clipPath>
           </li>
         </grains>
         <volumeRange>50</volumeRange>

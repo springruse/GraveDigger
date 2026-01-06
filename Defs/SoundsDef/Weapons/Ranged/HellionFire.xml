@@ -9,7 +9,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Weapons/HellionFire</clipPath>
+            <clipPath>Weapons/Ranged/HellionFire</clipPath>
           </li>
         </grains>
         <volumeRange>85</volumeRange>
