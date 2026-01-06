@@ -715,7 +715,7 @@
   <!-- ============================================ -->
   <!-- FORLORN HOPE AUTOMATIC PISTOL -->
   <!-- ============================================ -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseGun">
     <defName>GD_ForlornHopeAutomaticPistol</defName>
     <label>forlorn hope automatic pistol</label>
     <description>A heavily modified automatic pistol that has been extensively altered for both good and worse.</description>
@@ -776,6 +776,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <recipeMaker />
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_ForlornHopePistol</defName>
