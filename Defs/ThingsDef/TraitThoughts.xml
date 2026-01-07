@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- ============================================ -->
+    <!-- VETERAN -->
+    <!-- ============================================ -->
+    <ThoughtDef>
+        <defName>GD_VeteranMood</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Adult</developmentalStageFilter>
+        <requiredTraits>
+            <li>Veteran</li>
+        </requiredTraits>
+        <requiredTraitsDegree>0</requiredTraitsDegree>
+        <stages>
+            <li>
+                <label>battle-hardened</label>
+                <description>I've been through worse.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

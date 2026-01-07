@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- ============================================ -->
+	<!-- VETERAN -->
+	<!-- ============================================ -->
+    <TraitDef>
+        <defName>Veteran</defName>
+        <commonality>0.2</commonality>
+        <degreeDatas>
+            <li>
+                <label>veteran</label>
+                <description>{PAWN_nameDef} is a longtime veteran of war, seeing many battles, hardships and defeats. {PAWN_pronoun} is hardened through experience, being better with ranged and melee weapons. {PAWN_pronoun} refuses to discuss {PAWN_possessive} time as a soldier, communicating poorly as a result.</description>
+                <possessions>
+                    <GD_CavalrySword />
+                    <GD_GraceRevolver />
+                </possessions>
+                <allowedMeditationFocusTypes>
+                    <li>Morbid</li>
+                </allowedMeditationFocusTypes>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+                    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.2</AimingDelayFactor>
+                    <MeleeHitChance>2</MeleeHitChance>
+                    <SocialImpact>-0.5</SocialImpact>
+                    <NegotiationAbility>-0.5</NegotiationAbility>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <conflictingTraits>
+            <li>Wimp</li>
+            <li>Kind</li>
+        </conflictingTraits>
+    </TraitDef>
+</Defs>
