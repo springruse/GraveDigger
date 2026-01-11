@@ -24,6 +24,7 @@
                     <MeleeHitChance>2</MeleeHitChance>
                     <SocialImpact>-0.5</SocialImpact>
                     <NegotiationAbility>-0.5</NegotiationAbility>
+                    <TradePriceImprovement>-0.5</TradePriceImprovement>
                 </statOffsets>
             </li>
         </degreeDatas>
@@ -55,5 +56,32 @@
                 </statOffsets>
             </li>
         </degreeDatas>
+    </TraitDef>
+    <!-- ============================================ -->
+	<!-- CHEMIST -->
+	<!-- ============================================ -->
+    <TraitDef>
+        <defName>Chemist</defName>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+            <li>
+                <label>chemist</label>
+                <description>{PAWN_nameDef} is trained in chemistry and is highly knowledgeable toward the human body. {PAWN_pronoun} sees the body as a easy to read system and is skilled at diagnosing and treating medical conditions.</description>
+                <possessions>
+                    <MedicineIndustrial>5</MedicineIndustrial>
+                </possessions>
+                <skillGains>
+                    <Medicine>2</Medicine>
+                </skillGains>
+                <statOffsets>
+                    <MedicalTendQuality>0.2</MedicalTendQuality>
+                    <MedicalTendSpeed>0.2</MedicalTendSpeed>
+                    <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
     </TraitDef>
 </Defs>
